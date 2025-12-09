@@ -1,0 +1,48 @@
+body {
+    display: flex; /* Permite que sus hijos sean fáciles de organizar en filas o columnas */
+    flex-direction: column;
+    min-height: 100vh; /* Esto establece la altura mínima de un elemento al 100% de la altura del viewport */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    background-image: url("Imagenes/Imagen de WhatsApp 2025-12-05 a las 19.35.01_239ceefc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    main {
+        flex: 1; /* Sirve para empujar el footer abajo cuando el contenido es corto*/
+    }
+header {
+    background-color: #41a7ce;
+    border-bottom: 3px solid #ccc;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+hr {
+    margin: 1px auto;
+    border: none;
+    height: 90px;
+    background: none;
+}
+button {
+    background-color: white;
+    color: #41a7ce;
+    border: none;
+    padding: 10px 18px;
+    margin: 6px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+footer{
+    PADDING: 10PX;
+    background-color: #41a7ce;
+    border-top: 3px solid #ccc;
+    color: white;
+    margin-top: auto; /* Esto sirve para que el footer quede siempre abajo */
+}

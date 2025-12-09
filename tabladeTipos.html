@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="estilos.css">
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabla de Tipos Pokémon</title>
+</head>
+<body>
+
+<header>
+    <h1>Tabla de Tipos - Squirtpedia</h1>
+    <nav>
+        <button onclick="window.location.href='index.html'">Inicio</button>
+        <button onclick="window.location.href='tabladeEstados.html'">Efectos de Estado</button>
+        <button onclick="window.location.href='guia.html'">Guias</button>
+    </nav>
+</header>
+
+<main>
+    <h1>¿Qué es la tabla de tipos?</h1>
+    <h2>
+        La tabla de tipos en Pokémon muestra cómo interactúan los distintos tipos elementales entre sí.
+        Cada tipo tiene sus propias fortalezas, debilidades y resistencias.
+        Comprenderlas es esencial para planificar estrategias en combate y aprovechar las ventajas o evitar desventajas frente a tus oponentes.
+    </h2>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Tipo</th>
+            <th>Descripción</th>
+            <th>Debilidades (x2)</th>
+            <th>Resistencias / Inmunidades (x½ / x0)</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td>Normal</td><td>Pokémon sin afinidad elemental especial, suelen tener ataques físicos o básicos.</td><td>Lucha (x2)</td><td>Inmune a Fantasma (x0)</td></tr>
+        <tr><td>Fuego</td><td>Pokémon que controlan el calor y las llamas.</td><td>Agua, Tierra, Roca (x2)</td><td>Resiste Fuego, Planta, Hielo, Bicho, Acero, Hada (x½)</td></tr>
+        <tr><td>Agua</td><td>Pokémon que manipulan el agua o viven en ambientes acuáticos.</td><td>Eléctrico, Planta (x2)</td><td>Resiste Fuego, Agua, Hielo, Acero (x½)</td></tr>
+        <tr><td>Planta</td><td>Pokémon relacionados con la naturaleza, hojas o raíces.</td><td>Fuego, Hielo, Veneno, Volador, Bicho (x2)</td><td>Resiste Agua, Eléctrico, Planta, Tierra (x½)</td></tr>
+        <tr><td>Eléctrico</td><td>Pokémon que generan o controlan electricidad.</td><td>Tierra (x2)</td><td>Resiste Eléctrico, Volador, Acero (x½)</td></tr>
+        <tr><td>Hielo</td><td>Pokémon que dominan el frío y las bajas temperaturas.</td><td>Fuego, Lucha, Roca, Acero (x2)</td><td>Resiste Hielo (x½)</td></tr>
+        <tr><td>Lucha</td><td>Pokémon expertos en combate cuerpo a cuerpo.</td><td>Volador, Psíquico, Hada (x2)</td><td>Resiste Bicho, Roca, Siniestro (x½)</td></tr>
+        <tr><td>Veneno</td><td>Pokémon que usan toxinas y venenos para atacar.</td><td>Tierra, Psíquico (x2)</td><td>Resiste Planta, Lucha, Veneno, Bicho, Hada (x½)</td></tr>
+        <tr><td>Tierra</td><td>Pokémon que manipulan el suelo y la tierra.</td><td>Agua, Planta, Hielo (x2)</td><td>Resiste Veneno, Roca (x½) / Inmune a Eléctrico (x0)</td></tr>
+        <tr><td>Volador</td><td>Pokémon que pueden volar o moverse por el aire.</td><td>Eléctrico, Hielo, Roca (x2)</td><td>Resiste Planta, Lucha, Bicho (x½) / Inmune a Tierra (x0)</td></tr>
+        <tr><td>Psíquico</td><td>Pokémon con poderes mentales o telequinéticos.</td><td>Bicho, Fantasma, Siniestro (x2)</td><td>Resiste Lucha, Psíquico (x½)</td></tr>
+        <tr><td>Bicho</td><td>Pokémon inspirados en insectos, con gran diversidad y velocidad.</td><td>Fuego, Volador, Roca (x2)</td><td>Resiste Planta, Lucha, Tierra (x½)</td></tr>
+        <tr><td>Roca</td><td>Pokémon de cuerpos duros y resistentes.</td><td>Agua, Planta, Lucha, Tierra, Acero (x2)</td><td>Resiste Normal, Fuego, Veneno, Volador (x½)</td></tr>
+        <tr><td>Fantasma</td><td>Pokémon que habitan en el plano espiritual o sombrío.</td><td>Fantasma, Siniestro (x2)</td><td>Resiste Veneno, Bicho (x½) / Inmune a Normal, Lucha (x0)</td></tr>
+        <tr><td>Dragón</td><td>Pokémon poderosos inspirados en dragones mitológicos.</td><td>Hielo, Dragón, Hada (x2)</td><td>Resiste Fuego, Agua, Planta, Eléctrico (x½)</td></tr>
+        <tr><td>Siniestro</td><td>Pokémon asociados con la oscuridad o tácticas sucias.</td><td>Lucha, Bicho, Hada (x2)</td><td>Resiste Fantasma, Siniestro (x½) / Inmune a Psíquico (x0)</td></tr>
+        <tr><td>Acero</td><td>Pokémon con cuerpos metálicos o muy resistentes.</td><td>Fuego, Lucha, Tierra (x2)</td><td>Resiste Normal, Planta, Hielo, Volador, Psíquico, Bicho, Roca, Dragón, Acero, Hada (x½) / Inmune a Veneno (x0)</td></tr>
+        <tr><td>Hada</td><td>Pokémon mágicos y encantadores, fuertes contra dragones.</td><td>Veneno, Acero (x2)</td><td>Resiste Lucha, Bicho, Siniestro (x½) / Inmune a Dragón (x0)</td></tr>
+        </tbody>
+    </table>
+</main>
+
+<footer>
+    <h1>Squirtpedia es un proyecto de Fco Redondo y Alvaro Almoguera</h1>
+    <h2>DAM | Lenguajes de Marcas curso 2025 / 2026</h2>
+</footer>
+</body>
+</html>

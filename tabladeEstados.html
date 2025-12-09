@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="estilos.css">
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabla de Tipos Pokémon</title>
+</head>
+<body>
+
+<header>
+    <h1>Tabla de Estados - Squirtpedia</h1>
+    <nav>
+        <button onclick="window.location.href='index.html'">Inicio</button>
+        <button onclick="window.location.href='tabladeTipos.html'">Tabla de tipos</button>
+        <button onclick="window.location.href='guia.html'">Guias</button>
+    </nav>
+</header>
+
+<main>
+    <h1>¿Qué son los efectos de estado?</h1>
+    <h2>
+        Los efectos de estado son condiciones que afectan a un Pokémon durante una batalla. Pueden reducir PS, impedir actuar, bajar estadísticas o aplicar otros efectos. Se separan principalmente en estados principales (no-volátiles) como Envenenado o Dormido y efectos volátiles como Confusión o Retroceso que suelen desaparecer al cambiar de Pokémon.
+    </h2>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Efecto</th>
+            <th>Tipo</th>
+            <th>Descripción</th>
+            <th>Duración</th>
+            <th>Cura</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td>Quemado</td><td>No-volátil</td><td>	Inflige daño pasivo al final de cada turno (1/16 PS en juegos modernos) y reduce el poder de los ataques físicos en 1/2 de su ataque base en la mayoría de generaciones, si el Pokémon ha subido su ataque anteriormente, la quemadura le negará esta subida de estadisticas.</td><td>Hasta que se cure.</td><td>Antiquemar, Cura total, Restaurar Todo, Campana Cura (Ataque) Bayas especificas y Pokémon tipo fuego (Estos son inmunes a la quemadura)</td></tr>
+        <tr><td>Envenenado</td><td>No-volátil</td><td>Recibe daño de veneno al final del turno (1/8 PS en muchos juegos).</td><td>Hasta que se cure.</td><td>Antídoto,Cura Total, Restaurar Todo, Campana cura (Ataque), o habilidades/objetos específicos según generación, además de que a pokemon tipo Veneno y Acero no les afecta (Tienen inmunidad a este).</td></tr>
+        <tr><td>Envenenado gravemente / Tóxico</td><td>No-volátil</td><td>Daño creciente cada turno: aumenta con los turnos transcurridos (tóxico). Muy peligroso a largo plazo.</td><td>Persiste hasta curarlo; el daño incrementa cada turno.</td><td>(Igual que el envenenamiento).</td></tr>
+        <tr><td>Parálisis</td><td>No-volátil</td><td>Reduce la velocidad drásticamente (en muchas generaciones al 25% o 50%) y tiene probabilidad de impedir al Pokémon actuar (~25%).</td><td>Hasta curarlo.</td><td>Antiparalizador, Cura Total, Restaurar Todo, Campana Cura (Ataque), habilidades o equipables que previenen la parálisis.</td></tr>
+        <tr><td>Dormido</td><td>No-volátil</td><td>El Pokémon no puede atacar mientras está dormido. En generaciones actuales dura entre 1–3 turnos.</td><td>1–3 turnos típicos (varía por generación/efecto).</td><td>Despertar, Cura Total, Restaurar todo, Campana Cura (Ataque), habilidades, Objetos especificos o esperar a que cese por turnos.</td></tr>
+        <tr><td>Congelado</td><td>No-volátil</td><td>El Pokémon está incapacitado por congelación y no puede actuar. Puede descongelarse por calor o por ciertos ataques de fuego.</td><td>Indefinido hasta curarse en la mayoría de juegos. (20% de descongelarse cada turno a partir de Tercera Generación).</td><td>Movimientos de fuego, Anticongelar, Cura Total, Restaurar Todo, Objetos especificos.</td></tr>
+        <tr><td>Confusión</td><td>Volátil</td><td>El Pokémon puede golpearse a sí mismo en lugar de realizar su ataque (~33% de probabilidad) durante la duración, este golpe a si mismo se calcula con daño físico.</td><td>1-4 turnos típicos.</td><td>Cura Total, Restaurar Todo, Objetos equipables especificos, cambiar de Pokémon o movimientos que quiten efectos volátiles.</td></tr>
+        <tr><td>Retroceso</td><td>Volátil</td><td>Hace que el Pokémon no actúe ese turno si retrocede, suele ocurrir solo en ese turno.</td><td>Solo ese turno.</td><td>Prevenir con habilidades/objetos o usar prioridad; no hay cura durante el turno</td></tr>
+        <tr><td>Enamoramiento</td><td>Volátil</td><td>El Pokémon puede fallar al atacar por estar enamorado (~50% probabilidad), un Pokémon solo puede ser enamorado por otro Pokémon de género distinto a el, los Pokémon sin género no se ven afectados por el enamoramiento.</td><td>Persiste hasta cambiar de Pokémon o curarlo.</td><td>Cambiar de Pokémon, Campana cura (Ataque), Cura Total y Restaurar Todo.</td></tr>
+        <tr><td>Drenadoras</td><td>Volátil / persistente</td><td>Se drenan PS cada turno y se transfieren al Pokémon atacante.</td><td>Hasta que se cure o cambie de Pokémon.</td><td>Giro rápido (Ataque), Rugido (Ataque), Remolino (Ataque),Cura Total, Restaurar Todo, cambiar de Pokémon.</td></tr>
+        <tr><td>Ataduras</td><td>Volátil</td><td>El Pokémon recibe daño cada turno durante varios turnos y no puede escapar.</td><td>Varía por movimiento y generación (normalmente 2+ turnos).</td><td>Esperar el fin del efecto.</td></tr>
+        <tr><td>Estados por habilidades</td><td>Pasiva / Habilidad</td><td>Algunas habilidades aplican estados al contacto</td><td>Depende del estado aplicado.</td><td>Evitar contacto, usar habilidades u objetos que previenen el estado.</td></tr>
+
+        </tbody>
+    </table>
+</main>
+
+<footer>
+    <h1>Squirtpedia es un proyecto de Fco Redondo y Alvaro Almoguera</h1>
+    <h2>DAM | Lenguajes de Marcas curso 2025 / 2026</h2>
+</footer>
+</body>
+</html>
