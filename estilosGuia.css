@@ -36,6 +36,17 @@ main {
     padding: 24px;
     max-width: 1100px;
     margin: 24px auto;
+    /* Wrapper es la envoltura, en este caso del video */
+    .video-wrapper {
+        display: flex; /*Flexbox facilita la alineación horizontal y vertical sin necesidad de usar margin:auto o text-align:center en cada hijo.*/
+        justify-content: center; /*justify-content: center alinea en el eje principal (horizontal por defecto)*/
+        align-items: center; /*align-items: center alinea en el eje transversal (vertical por defecto).*/
+    }
+    /*hacen que el video sea responsivo: se adapta al ancho del contenedor sin distorsionarse.*/
+    .video-wrapper video {
+        max-width: 100%;
+        height: auto;
+    }
 }
 h2 {
     font-size: 1.2em;
