@@ -40,7 +40,7 @@ button {
     font-weight: bold;
 }
 footer{
-    PADDING: 10PX;
+    padding: 10PX;
     background-color: #41a7ce;
     border-top: 3px solid #ccc;
     color: white;
