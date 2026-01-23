@@ -1,261 +1,187 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
     color: #333;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
+
+h1 {
+    color: #1a5a75;
+    text-align: center;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+h1::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #41a7ce;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+h2 {
+    color: #555;
+    font-weight: normal;
+    text-align: center;
+    max-width: 900px;
+    margin: 20px auto;
+    font-size: 1.1rem;
+    padding: 0 20px;
+}
+
 header {
     background-color: #41a7ce;
-    border-bottom: 3px solid #ccc;
     color: white;
-    text-align: center;
-    padding: 20px;
+    padding: 25px 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
-header h1 {
-    margin: 0;
-    font-size: 1.6em;
-}
+
 nav {
-    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
 }
+
 nav button {
     background-color: white;
     color: #41a7ce;
-    border: none;
-    padding: 10px 18px;
-    margin: 6px;
-    border-radius: 8px;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 25px;
     cursor: pointer;
     font-weight: bold;
+    transition: all 0.3s ease;
 }
+
 nav button:hover {
-    background-color: #ffdddd;
+    background-color: #1a5a75;
+    color: white;
+    border-color: #1a5a75;
 }
+
 main {
-    padding: 24px;
-    max-width: 1100px;
-    margin: 24px auto;
-}
-main .card {
-    background: white;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    max-width: 1200px;
+    margin: 0 auto;
 }
-h2 {
-    font-size: 1.2em;
-    color: #000000;
-    line-height: 1.5;
-    margin-top: 0;
-    font-weight: normal;
-}
-.intro {
-    margin-bottom: 14px;
-}
-.small {
-    font-size: 0.95em;
-    color: #444;
-}
+
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 18px 0;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.06);
-}
-td1 {
-    text-align: left;
-    font-weight: bold;
-    color: gray;
-    text-decoration: underline 2px;
-}
-td2 {
-    text-align: left;
-    font-weight: bold;
-    color: red;
-    text-decoration: underline 2px;
-}
-td3 {
-    text-align: left;
-    font-weight: bold;
-    color: blue;
-    text-decoration: underline 2px;
-}
-td4 {
-    text-align: left;
-    font-weight: bold;
-    color: green;
-    text-decoration: underline 2px;
-}
-td5 {
-    text-align: left;
-    font-weight: bold;
-    color: yellow;
-    text-decoration: underline 2px;
-}
-td6 {
-    text-align: left;
-    font-weight: bold;
-    color: cyan;
-    text-decoration: underline 2px;
-}
-td7 {
-    text-align: left;
-    font-weight: bold;
-    color: #c35131;
-    text-decoration: underline 2px;
-}
-td8 {
-    text-align: left;
-    font-weight: bold;
-    color: purple;
-    text-decoration: underline 2px;
-}
-td9 {
-    text-align: left;
-    font-weight: bold;
-    color: rgba(139, 69, 19, 0.53);
-    text-decoration: underline 2px;
-}
-td10 {
-    text-align: left;
-    font-weight: bold;
-    color: skyblue;
-    text-decoration: underline 2px;
-}
-td11 {
-    text-align: left;
-    font-weight: bold;
-    color: mediumpurple;
-    text-decoration: underline 2px;
-}
-td12 {
-    text-align: left;
-    font-weight: bold;
-    color: lime;
-    text-decoration: underline 2px;
-}
-td13 {
-    text-align: left;
-    font-weight: bold;
-    color: #917373;
-    text-decoration: underline 2px;
-}
-td14 {
-    text-align: left;
-    font-weight: bold;
-    color: rebeccapurple;
-    text-decoration: underline 2px;
-}
-td15 {
-    text-align: left;
-    font-weight: bold;
-    color: mediumblue;
-    text-decoration: underline 2px;
-}
-td16 {
-    text-align: left;
-    font-weight: bold;
-    color: #040404;
-    text-decoration: underline 2px;
-}
-td17 {
-    text-align: left;
-    font-weight: bold;
-    color: darkgray;
-    text-decoration: underline 2px;
-}
-td18 {
-    text-align: left;
-    font-weight: bold;
-    color: hotpink;
-    text-decoration: underline 2px;
-}
-th, td {
-    border: 1px solid #ccc;
-    padding: 12px;
-    text-align: left;
-    vertical-align: top;
-}
-th {
-    background: #41a7ce;
-    color: #222;
-    font-weight: 700;
-}
-tr:nth-child(even) {
-    background-color: #fafafa;
-}
-.note {
-    font-size: 0.95em;
-    color: #555;
-    margin-top: 12px;
-}
-footer {
-    text-align: center;
-    padding: 26px;
-    background-color: #41a7ce;
-    border-top: 3px solid #ccc;
-    color:white;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     margin-top: 30px;
 }
-hr {
-    margin: 1px auto;
-    border: none;
-    height: 90px;
-    background: none;
-}
-footer h1 {
-    font-size: 1.2em;
-    color: white;
-    margin: 6px 0;
-}
-footer .small {
-    margin-bottom: 12px;
-}
-footer form {
-    background: white;
-    padding: 18px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    margin: 26px auto 0 auto;
-    max-width: 470px;
-    text-align: left;
-    border: 2px solid #ccc;
-}
-footer form h3 {
-    color: #41a7ce;
-    margin-bottom: 14px;
-    text-align: center;
-}
-footer label {
-    color: #333;
-    font-weight: bold;
-}
-footer input,
-footer textarea {
-    width: 100%;
-    padding: 8px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    margin-bottom: 16px;
-    font-family: inherit;
-}
-footer button {
+
+thead {
     background-color: #41a7ce;
     color: white;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    width: 100%;
-    font-size: 1em;
 }
-footer button:hover { background-color: #41a7ce; }
-@media (max-width: 760px) {
-    th, td { padding: 10px; font-size: 0.95em; }
-    nav button { padding: 8px 12px; margin: 4px; }
-    main { padding: 12px; }
-    footer form { max-width: 95vw; padding: 12px;}
+
+th {
+    padding: 18px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+td1, td2, td3, td4, td5, td6, td7, td8, td9, td10,
+td11, td12, td13, td14, td15, td16, td17, td18 {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    min-width: 80px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+td1 { background-color: #A8A878; }
+td2 { background-color: #F08030; }
+td3 { background-color: #6890F0; }
+td4 { background-color: #78C850; }
+td5 { background-color: #F8D030; }
+td6 { background-color: #98D8D8; }
+td7 { background-color: #C03028; }
+td8 { background-color: #A040A0; }
+td9 { background-color: #E0C068; }
+td10 { background-color: #A890F0; }
+td11 { background-color: #F85888; }
+td12 { background-color: #A8B820; }
+td13 { background-color: #B8A038; }
+td14 { background-color: #705898; }
+td15 { background-color: #7038F8; }
+td16 { background-color: #705848; }
+td17 { background-color: #B8B8D0; }
+td18 { background-color: #EE99AC; }
+
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 25px;
+        border: 2px solid #41a7ce;
+        border-radius: 12px;
+        background: white;
+        padding: 10px;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 45%;
+        text-align: center;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        font-weight: bold;
+        color: #41a7ce;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+    }
+
+    td:last-child {
+        border-bottom: none;
+    }
+}
+
+footer {
+    background-color: #1a5a75;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
 }

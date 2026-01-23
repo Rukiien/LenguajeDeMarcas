@@ -1,48 +1,215 @@
 body {
-    display: flex; /* Permite que sus hijos sean fáciles de organizar en filas o columnas */
-    flex-direction: column;
-    min-height: 100vh; /* Esto establece la altura mínima de un elemento al 100% de la altura del viewport */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
     margin: 0;
     padding: 0;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    background-image: url("Imagenes/Imagen de WhatsApp 2025-12-05 a las 19.35.01_3f3ea336.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    line-height: 1.6;
 }
 
-    main {
-        flex: 1; /* Sirve para empujar el footer abajo cuando el contenido es corto*/
-    }
+/* HEADER Y NAV (Idéntico a estilos.css para consistencia) */
 header {
     background-color: #41a7ce;
-    border-bottom: 3px solid #ccc;
     color: white;
+    padding: 25px 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     text-align: center;
-    padding: 10px;
 }
-hr {
-    margin: 1px auto;
-    border: none;
-    height: 90px;
-    background: none;
+
+header h1 {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 2rem;
 }
-button {
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+nav button {
     background-color: white;
     color: #41a7ce;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #1a5a75;
+    color: white;
+    border-color: #1a5a75;
+}
+
+/* MAIN CONTENT */
+main {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #1a5a75;
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #555;
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 10px auto 30px auto;
+}
+
+/* Estilo para los párrafos explicativos */
+main p {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 15px;
+    border-left: 4px solid #41a7ce; /* Detalle de diseño */
+}
+
+/* CONTENEDOR DE VIDEO */
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    margin: 30px 0;
+}
+
+.video-wrapper video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* FOOTER Y FORMULARIO */
+footer {
+    background-color: #1a5a75;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 50px;
+}
+
+footer h1 {
+    color: white; /* Sobrescribe el color azul oscuro de los h1 generales */
+    font-size: 1.4rem;
+    margin-top: 30px;
+}
+
+footer h2 {
+    color: #a8d6e8;
+    font-size: 1rem;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    margin: 40px 0;
+}
+
+/* ESTILOS DEL FORMULARIO (Modernizado) */
+footer form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: left;
+    border: none; /* Quitamos el borde gris antiguo */
+}
+
+footer form h3 {
+    color: #1a5a75;
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid #41a7ce;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+footer label {
+    color: #333;
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+footer input,
+footer textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-family: inherit;
+    box-sizing: border-box; /* Asegura que el padding no rompa el ancho */
+    transition: border 0.3s;
+    background-color: #f9fbfd;
+}
+
+footer input:focus,
+footer textarea:focus {
+    outline: none;
+    border-color: #41a7ce;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(65, 167, 206, 0.2);
+}
+
+footer button[type="submit"] {
+    background-color: #41a7ce;
+    color: white;
     border: none;
-    padding: 10px 18px;
-    margin: 6px;
+    padding: 15px;
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
+    width: 100%;
+    font-size: 1.1rem;
+    transition: background 0.3s;
 }
-footer{
-    padding: 10PX;
-    background-color: #41a7ce;
-    border-top: 3px solid #ccc;
-    color: white;
-    margin-top: auto; /* Esto sirve para que el footer quede siempre abajo */
+
+footer button[type="submit"]:hover {
+    background-color: #1a5a75;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    footer form {
+        padding: 20px;
+    }
 }
