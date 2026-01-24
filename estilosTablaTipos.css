@@ -32,7 +32,7 @@ h1::after {
 }
 
 h2 {
-    color: #555;
+    color: #333;
     font-weight: normal;
     text-align: center;
     max-width: 900px;
@@ -105,6 +105,7 @@ td {
     padding: 15px;
     border-bottom: 1px solid #f0f0f0;
 }
+
 td1, td2, td3, td4, td5, td6, td7, td8, td9, td10,
 td11, td12, td13, td14, td15, td16, td17, td18 {
     display: inline-block;
@@ -147,6 +148,8 @@ td18 { background-color: #EE99AC; }
         display: none;
     }
 
+    tbody {}
+
     tr {
         margin-bottom: 25px;
         border: 2px solid #41a7ce;
@@ -157,9 +160,8 @@ td18 { background-color: #EE99AC; }
 
     td {
         border: none;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid #333;
         position: relative;
-        padding-left: 45%;
         text-align: center;
     }
 
