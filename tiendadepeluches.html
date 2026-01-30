@@ -1,30 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title>Tienda de peluches de Pokemon</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PokStore - Peluches Legendarios</title>
+
+    <!-- Estilo general del sitio -->
+    <link rel="stylesheet" href="estilos.css" />
+    <!-- Estilo específico de la tienda -->
+    <link rel="stylesheet" href="Tienda.css" />
 </head>
+
 <body>
-    <header>
-        <h1>Tienda de peluches de Pokemon</h1>
-        <nav>
-            <button onclick="window.location.href='index.html'">Indice</button>
-            <button onclick="window.location.href='tabladeEstados.html'">Efectos de Estado</button>
-            <button onclick="window.location.href='tabladeTipos.html'">Tabla de tipos</button>
-            <button onclick="window.location.href='tablaRegiones.html'">Tabla de regiones</button>
-            <button onclick="window.location.href='guia.html'">Guias</button>
+<header class="topbar">
+    <div class="topbar__inner">
+        <div class="brand">
+            <span class="brand__logo" aria-hidden="true">PS</span>
+            <div class="brand__text">
+                <h1 class="brand__title">PokStore</h1>
+                <p class="brand__subtitle">Peluches Legendarios</p>
+            </div>
+        </div>
+
+        <nav class="topbar__nav" aria-label="Navegación principal">
+            <a class="navlink" href="index.html">Inicio</a>
+            <a class="navlink navlink--active" href="tiendadepeluches.html">Peluches</a>
+            <a class="navlink" href="guia.html">Guía</a>
         </nav>
-    </header>
+    </div>
+</header>
 
-    <main>
-        <p>Espacio para compras de peluches</p>
-    </main>
+<main class="shop">
+    <section class="shop__controls" aria-label="Controles de catálogo">
+        <div class="search">
+            <label class="sr-only" for="buscar">Buscar peluche</label>
+            <input id="buscar" type="search" placeholder="Buscar por nombre… (ej: Eevee)" />
+        </div>
 
-    <footer>
-        <h1>Proyecto Squirtpedia</h1>
-        <p class="small">Squirtpedia es un proyecto de Fco Redondo y Alvaro Almoguera</p>
-        <p class="small">DAM | Lenguajes de Marcas curso 2025 / 2026</p>
-    </footer>
+        <div class="chips" role="group" aria-label="Filtros rápidos">
+            <button class="chip chip--active" type="button" data-filter="all">Todos</button>
+            <button class="chip" type="button" data-filter="0-24">Hasta 24€</button>
+            <button class="chip" type="button" data-filter="25-29">25€–29€</button>
+            <button class="chip" type="button" data-filter="30+">30€+</button>
+        </div>
+    </section>
+
+    <div class="shop__grid">
+        <section class="catalog" aria-label="Catálogo">
+            <div class="catalog__header">
+                <h2>Catálogo</h2>
+                <p class="muted">
+                    Productos en carrito: <strong><span id="contador-carrito">0</span></strong>
+                </p>
+            </div>
+
+            <!-- Los productos se insertan aquí con JavaScript -->
+            <section id="catalogo" class="catalog__items"></section>
+        </section>
+
+        <aside class="cart" aria-label="Carrito de compras">
+            <div class="cart__header">
+                <h2>Tu carrito</h2>
+                <p class="muted">Revisa tus peluches antes de pagar.</p>
+            </div>
+
+            <ul id="lista-carrito" class="cart__list" aria-live="polite"></ul>
+
+            <div class="cart__footer">
+                <div class="cart__total">
+                    <span>Total</span>
+                    <span><strong><span id="total">0</span>€</strong></span>
+                </div>
+
+                <div class="cart__actions">
+                    <button id="btn-vaciar" class="btn btn--ghost" type="button">Vaciar</button>
+                    <button id="btn-comprar" class="btn btn--primary" type="button">Comprar</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+</main>
+
+<footer>
+    <h1>Proyecto Squirtpedia</h1>
+    <p class="small">Squirtpedia es un proyecto de Fco Redondo y Alvaro Almoguera</p>
+    <p class="small">DAM | Lenguajes de Marcas curso 2025 / 2026</p>
+</footer>
+
+<script src="Tienda.js"></script>
 </body>
 </html>
