@@ -139,46 +139,46 @@ td16 { background-color: #705848; }
 td17 { background-color: #B8B8D0; }
 td18 { background-color: #EE99AC; }
 
-@media (max-width: 768px) {
-    table, thead, tbody, th, td, tr {
-        display: block;
-    }
+    @media (max-width: 768px) {
+        table, thead, tbody, th, td, tr {
+            display: block;
+        }
 
-    thead tr {
-        display: none;
-    }
+        thead tr {
+            display: none;
+        }
 
-    tbody {}
+        tbody {}
 
-    tr {
-        margin-bottom: 25px;
-        border: 2px solid #41a7ce;
-        border-radius: 12px;
-        background: white;
-        padding: 10px;
-    }
+        tr {
+            margin-bottom: 25px;
+            border: 2px solid #41a7ce;
+            border-radius: 12px;
+            background: white;
+            padding: 10px;
+        }
 
-    td {
-        border: none;
-        border-bottom: 1px solid #333;
-        position: relative;
-        text-align: center;
-    }
+        td {
+            border: none;
+            border-bottom: 1px solid #333;
+            position: relative;
+            text-align: center;
+        }
 
-    td::before {
-        content: attr(data-label);
-        position: absolute;
-        left: 15px;
-        font-weight: bold;
-        color: #41a7ce;
-        text-transform: uppercase;
-        font-size: 0.75rem;
-    }
+        td::before {
+            content: attr(data-label);
+            position: absolute;
+            left: 15px;
+            font-weight: bold;
+            color: #41a7ce;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+        }
 
-    td:last-child {
-        border-bottom: none;
+        td:last-child {
+            border-bottom: none;
+        }
     }
-}
 
 footer {
     background-color: #1a5a75;
