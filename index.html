@@ -7,75 +7,114 @@
     <link rel="stylesheet" href="estilomain.css">
 </head>
 <body>
-    <header>
-        <h1>SQUIRTPEDIA</h1>
-        <nav>
-            <button onclick="window.location.href='tabladeEstados.html'">Efectos de Estado</button>
-            <button onclick="window.location.href='tabladeTipos.html'">Tabla de tipos</button>
-            <button onclick="window.location.href='tablaRegiones.html'">Tabla de regiones</button>
-            <button onclick="window.location.href='guia.html'">Guias</button>
-            <button onclick="window.location.href='tiendadepeluches.html'">Tienda de peluches</button>
-        </nav>
-    </header>
+<header>
+    <h1>SQUIRTPEDIA</h1>
+    <nav>
+        <button onclick="window.location.href='tabladeEstados.html'">Efectos de Estado</button>
+        <button onclick="window.location.href='tabladeTipos.html'">Tabla de tipos</button>
+        <button onclick="window.location.href='tablaRegiones.html'">Tabla de regiones</button>
+        <button onclick="window.location.href='guia.html'">Guias</button>
+        <button onclick="window.location.href='tiendadepeluches.html'">Tienda de peluches</button>
 
-    <button id="openPopup" class="open-btn">Inicio de sesión</button>
+        <!-- NUEVO: Botón de logout (inicialmente oculto) -->
+        <button id="logoutBtn" onclick="logout()" style="display: none;">Cerrar Sesión</button>
+    </nav>
+    <!-- NUEVO: Saludo al usuario (inicialmente oculto) -->
+    <div id="userGreeting" style="display: none; color: white; padding: 10px;"></div>
+</header>
 
-    <main>
-        <p><i><strong>Guía básica sobre conocimientos Pokémon.</strong></i></p>
-        <img src="Imagenes/SquirtPediaSinFondo.png" height="300" width="300" />
-    </main>
+<button id="openPopup" class="open-btn">Inicio de sesión</button>
 
-    <!-- Pop-up Lateral con LOGIN -->
-    <div id="sidebarPopup" class="sidebar-popup">
-        <div class="popup-content">
-            <div class="popup-header">
-                <h2>~Iniciar Sesión~</h2>
-                <button id="closePopup" class="close-btn">&times;</button>
-            </div>
-            <div class="popup-body">
-                <form id="loginForm" class="login-form">
-                    <div class="input-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="nombre123@gmail.com" required>
-                    </div>
+<main>
+    <p><i><strong>Guía básica sobre conocimientos Pokémon.</strong></i></p>
+    <img src="Imagenes/SquirtPediaSinFondo.png" height="300" width="300" />
+</main>
 
-                    <div class="input-group">
-                        <label for="password">Contraseña</label>
-                        <input type="password" id="password" name="password" placeholder="Contraseña" required>
-                        <div class="password-toggle">
-                            <span img src="Imagenes/Unown_ojo_abierto.webp" alt="Mostrar contraseña" class="eye-icon" id="eyeIcon"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-options">
-                        <label class="checkbox-label">
-                            <input type="checkbox" id="remember">
-                            <span class="checkmark"></span>
-                            Recordar sesión
-                        </label>
-                        <a href="#" class="forgot-link">¿Olvidaste tu contraseña?</a>
-                    </div>
-
-                    <button type="submit" class="login-btn">Iniciar Sesión</button>
-                </form>
-
-                <div class="divider">
-                    <span>o</span>
+<!-- Pop-up Lateral con LOGIN -->
+<div id="sidebarPopup" class="sidebar-popup">
+    <div class="popup-content">
+        <div class="popup-header">
+            <h2 id="popupTitle">~Iniciar Sesión~</h2>
+            <button id="closePopup" class="close-btn">&times;</button>
+        </div>
+        <div class="popup-body">
+            <!-- FORMULARIO DE LOGIN (YA EXISTENTE - MODIFICADO) -->
+            <form id="loginForm" class="login-form">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="nombre123@gmail.com" required>
                 </div>
 
-                <button class="register-btn">Crear Cuenta</button>
+                <div class="input-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                    <div class="password-toggle">
+                        <img src="Imagenes/Unown_ojo_abierto.webp" alt="Mostrar contraseña" class="eye-icon" id="eyeIconRegister" style="cursor: pointer; position: absolute; right: 10px; top: 50%; transform: translateY(-50%); width: 24px; height: 24px;">
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="remember">
+                        <span class="checkmark"></span>
+                        Recordar sesión
+                    </label>
+                    <a href="#" class="forgot-link">¿Olvidaste tu contraseña?</a>
+                </div>
+
+                <button type="submit" class="login-btn">Iniciar Sesión</button>
+            </form>
+
+            <!-- ============================================ -->
+            <!-- NUEVO: FORMULARIO DE REGISTRO (INICIALMENTE OCULTO) -->
+            <!-- ============================================ -->
+            <form id="registerForm" class="login-form" style="display: none;">
+                <div class="input-group">
+                    <label for="registerName">Nombre completo</label>
+                    <input type="text" id="registerName" name="registerName" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" name="registerEmail" placeholder="nombre123@gmail.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="registerPassword">Contraseña</label>
+                    <input type="password" id="registerPassword" name="registerPassword" placeholder="Mínimo 6 caracteres" required>
+                    <div class="password-toggle">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="registerConfirmPassword">Confirmar Contraseña</label>
+                    <input type="password" id="registerConfirmPassword" name="registerConfirmPassword" placeholder="Repite tu contraseña" required>
+                    <div class="password-toggle">
+                        <span img src="Imagenes/Unown_ojo_abierto.webp" alt="Mostrar contraseña" class="eye-icon" id="eyeIconConfirm"></span>
+                    </div>
+                </div>
+
+                <button type="submit" class="login-btn">Crear Cuenta</button>
+            </form>
+
+            <div class="divider">
+                <span>o</span>
             </div>
+
+            <!-- MODIFICADO: Este botón ahora cambia entre formularios -->
+            <button class="register-btn" id="toggleFormBtn">Crear Cuenta</button>
         </div>
     </div>
+</div>
 
-    <footer>
+<footer>
     <h1>Proyecto Squirtpedia</h1>
     <p class="small">Squirtpedia es un proyecto de Fco Redondo y Alvaro Almoguera</p>
     <p class="small">DAM | Lenguajes de Marcas curso 2025 / 2026</p>
 </footer>
 
-    <div id="overlay" class="overlay"></div>
+<div id="overlay" class="overlay"></div>
 
-    <script src="JavaIndex.js"></script>
+<script src="JavaIndex.js"></script>
 </body>
 </html>
