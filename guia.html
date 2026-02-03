@@ -36,19 +36,25 @@
     <p>Pese que estas probabilidades no son reales ni exactas, este metodo es el mas ideal para conseguir un Pokemon shiny deseado de manera sencilla en los juegos de Octava generación, siendo la única desventaja de estos juegos el limite de Pokémons que tiene, ya que no posee la Pokedex completa.</p>
 </main>
 <footer>
-    <form action="mailto:tu-email@ejemplo.com" method="post" enctype="text/plain">
+    <form id="formularioSolicitud">
         <h3>Solicita un nuevo video</h3>
         <label for="nombre">Nombre:</label><br>
         <input type="text" id="nombre" name="nombre" required><br>
-        <label for="correo">Correo electrónico:</label><br>x
+        <label for="correo">Correo electrónico:</label><br>
         <input type="email" id="correo" name="correo" required><br>
         <label for="video">Describe el video que quieres:</label><br>
         <textarea id="video" name="video" rows="4" required></textarea><br>
-        <button type="submit">Enviar solicitud</button>
+        <button type="submit" id="btnEnviar">Enviar solicitud</button>
     </form>
     <hr>
     <h1>Squirtpedia es un proyecto de Fco Redondo y Alvaro Almoguera</h1>
     <h2>DAM Lenguajes de Marcas curso 2025 2026</h2>
 </footer>
+
+<!-- Librería de EmailJS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<!-- Tu script del formulario -->
+<script src="formulario.js"></script>
 </body>
 </html>
