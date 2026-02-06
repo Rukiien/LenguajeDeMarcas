@@ -38,7 +38,7 @@
             <button id="closePopup" class="close-btn">&times;</button>
         </div>
         <div class="popup-body">
-            <!-- FORMULARIO DE LOGIN (YA EXISTENTE - MODIFICADO) -->
+            <!-- FORMULARIO DE LOGIN -->
             <form id="loginForm" class="login-form">
                 <div class="input-group">
                     <label for="email">Email</label>
@@ -47,9 +47,9 @@
 
                 <div class="input-group">
                     <label for="password">Contraseña</label>
-                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
-                    <div class="password-toggle">
-                        <img src="Imagenes/Unown_ojo_abierto.webp" alt="Mostrar contraseña" class="eye-icon" id="eyeIconRegister" style="cursor: pointer; position: absolute; right: 10px; top: 50%; transform: translateY(-50%); width: 24px; height: 24px;">
+                    <div style="position: relative;">
+                        <input type="password" id="password" name="password" placeholder="Contraseña" required style="padding-right: 40px;">
+                        <img src="Imagenes/Unown_ojo_abierto.webp" alt="Mostrar contraseña" class="eye-icon" id="eyeIcon" style="cursor: pointer; position: absolute; right: 10px; top: 50%; transform: translateY(-50%); width: 24px; height: 24px;">
                     </div>
                 </div>
 
@@ -65,9 +65,7 @@
                 <button type="submit" class="login-btn">Iniciar Sesión</button>
             </form>
 
-            <!-- ============================================ -->
-            <!-- NUEVO: FORMULARIO DE REGISTRO (INICIALMENTE OCULTO) -->
-            <!-- ============================================ -->
+            <!-- FORMULARIO DE REGISTRO (INICIALMENTE OCULTO) -->
             <form id="registerForm" class="login-form" style="display: none;">
                 <div class="input-group">
                     <label for="registerName">Nombre completo</label>
@@ -81,16 +79,17 @@
 
                 <div class="input-group">
                     <label for="registerPassword">Contraseña</label>
-                    <input type="password" id="registerPassword" name="registerPassword" placeholder="Mínimo 6 caracteres" required>
-                    <div class="password-toggle">
+                    <div style="position: relative;">
+                        <input type="password" id="registerPassword" name="registerPassword" placeholder="Mínimo 6 caracteres" required style="padding-right: 40px;">
+                        <img src="Imagenes/Unown_ojo_abierto.webp" alt="Mostrar contraseña" class="eye-icon" id="eyeIconRegister" style="cursor: pointer; position: absolute; right: 10px; top: 50%; transform: translateY(-50%); width: 24px; height: 24px;">
                     </div>
                 </div>
 
                 <div class="input-group">
                     <label for="registerConfirmPassword">Confirmar Contraseña</label>
-                    <input type="password" id="registerConfirmPassword" name="registerConfirmPassword" placeholder="Repite tu contraseña" required>
-                    <div class="password-toggle">
-                        <span img src="Imagenes/Unown_ojo_abierto.webp" alt="Mostrar contraseña" class="eye-icon" id="eyeIconConfirm"></span>
+                    <div style="position: relative;">
+                        <input type="password" id="registerConfirmPassword" name="registerConfirmPassword" placeholder="Repite tu contraseña" required style="padding-right: 40px;">
+                        <img src="Imagenes/Unown_ojo_abierto.webp" alt="Mostrar contraseña" class="eye-icon" id="eyeIconConfirm" style="cursor: pointer; position: absolute; right: 10px; top: 50%; transform: translateY(-50%); width: 24px; height: 24px;">
                     </div>
                 </div>
 

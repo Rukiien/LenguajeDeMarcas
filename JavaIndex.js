@@ -110,7 +110,7 @@ function setupFormToggle() {
                 loginForm.style.display = 'none';
                 registerForm.style.display = 'block';
                 popupTitle.textContent = '~Crear Cuenta~';
-                toggleBtn.textContent = 'Ya tengo cuenta';
+                toggleBtn.textContent = 'Volver a Inicio de sesión';
             }
         });
     }
