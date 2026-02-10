@@ -16,10 +16,8 @@
         <button onclick="window.location.href='guia.html'">Guias</button>
         <button onclick="window.location.href='tiendadepeluches.html'">Tienda de peluches</button>
 
-        <!-- NUEVO: Botón de logout (inicialmente oculto) -->
         <button id="logoutBtn" onclick="logout()" style="display: none;">Cerrar Sesión</button>
     </nav>
-    <!-- NUEVO: Saludo al usuario (inicialmente oculto) -->
     <div id="userGreeting" style="display: none; color: white; padding: 10px;"></div>
 </header>
 
@@ -30,7 +28,6 @@
     <img src="Imagenes/SquirtPediaSinFondo.png" height="300" width="300" />
 </main>
 
-<!-- Pop-up Lateral con LOGIN -->
 <div id="sidebarPopup" class="sidebar-popup">
     <div class="popup-content">
         <div class="popup-header">
@@ -38,7 +35,6 @@
             <button id="closePopup" class="close-btn">&times;</button>
         </div>
         <div class="popup-body">
-            <!-- FORMULARIO DE LOGIN -->
             <form id="loginForm" class="login-form">
                 <div class="input-group">
                     <label for="email">Email</label>
@@ -65,7 +61,6 @@
                 <button type="submit" class="login-btn">Iniciar Sesión</button>
             </form>
 
-            <!-- FORMULARIO DE REGISTRO (INICIALMENTE OCULTO) -->
             <form id="registerForm" class="login-form" style="display: none;">
                 <div class="input-group">
                     <label for="registerName">Nombre completo</label>
@@ -100,7 +95,6 @@
                 <span>o</span>
             </div>
 
-            <!-- MODIFICADO: Este botón ahora cambia entre formularios -->
             <button class="register-btn" id="toggleFormBtn">Crear Cuenta</button>
         </div>
     </div>

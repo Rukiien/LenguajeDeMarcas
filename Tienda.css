@@ -343,7 +343,6 @@
     margin-top: 30px;
 }
 
-/* Accesibilidad */
 .sr-only{
     position: absolute;
     width: 1px;
@@ -354,10 +353,9 @@
     clip: rect(0,0,0,0);
     border: 0;
 }
-/* Flip card (imagen -> descripción) */
 .flip{
     width: 100%;
-    height: 130px;              /* ajusta si quieres más grande */
+    height: 130px;
     perspective: 900px;
     display: grid;
     place-items: center;
@@ -415,7 +413,6 @@
     text-align: center;
 }
 
-/* Accesibilidad: reduce motion */
 @media (prefers-reduced-motion: reduce){
     .flip__inner{ transition: none; }
 }
