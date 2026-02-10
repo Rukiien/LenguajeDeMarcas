@@ -4,8 +4,8 @@
     --text: #1f2937;
     --muted: #6b7280;
 
-    --primary: #41a7ce;   /* igual que estilos.css */
-    --primary-2: #1a5a75; /* igual que estilos.css */
+    --primary: #41a7ce;
+    --primary-2: #1a5a75;
 
     --shadow: 0 10px 25px rgba(0,0,0,0.08);
     --shadow-soft: 0 6px 18px rgba(0,0,0,0.06);
