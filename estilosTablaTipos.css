@@ -148,7 +148,10 @@ td18 { background-color: #EE99AC; }
             display: none;
         }
 
-        tbody {}
+        table {
+            background: transparent;
+            box-shadow: none;
+        }
 
         tr {
             margin-bottom: 25px;
